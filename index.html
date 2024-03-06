@@ -4,117 +4,92 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>B5 Forms</title>
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
-<style>
-body {
-background-color: #0000FF;
+<style> 
+[type=checkbox] {
+ vertical-align: middle;
+ }
+
+Label { margin-bottom: 10px 
 }
 
 .container {
-background-color: #FFFF00;
-padding: 13px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
 }
+
 </style>
+
+
 <body>
-<div class="container mt-3">
-<h2>Creating Vertical Form Layout</h2>
-<form>
+<div class="container" style="background-color:yellow;">
+  <h2>User Registration</h2>
 
-</form>
-   <div class="email mb-3">
-       <label for="inputEmail">Email</label>
-       <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-   </div>
+  <form>
+      <div class="username mb-3">
+        <label for="inputEmail">Username:</label>
+          <input type="username" class="form-control" id="inputUsername" placeholder="Enter your username">
+      </div>
 
-   <div class="email mb-3">
-       <label for="inputPassword">Password</label>
-       <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-   </div>
+      <div class="Emailaddress mb-3">
+          <label for="inputEmailaddress">Email address:</label>
+          <input type="inputEmailaddress" class="form-control" id="inputEmailaddress" placeholder="Enter your email">
+      </div>
 
-   <div class="email mb-3">
-       <div >
-           <input type="checkbox" id="checkRemember">
-           <label for="checkRemember">Remember me</label>
-       </div>
-   </div>
+      <div class="Password mb-3">
+          <label for="inputPassword">Password:</label>
+          <input type="inputPassword" class="form-control" id="inputEmailaddress" placeholder="Enter your password">
+      </div>
 
-   <div class="email mb-3">
-    <button type="submit" class="btn btn-danger">Sign in</button>
-</div>
+      <div class="Confirm password mb-3">
+          <label for="inputConfirmpassword">Confirm password:</label>
+          <input type="inputConfirmpassword" class="form-control" id="inputConfirmpassword" placeholder="Confirm your password">
+      </div>
 
-</form>
-</div>
-
-
-
-<div class="container mt-3">
-<h2>Creating Horizontal Form Layout</h2>
-<form>
-
-   <div class="row email mb-3">
-       <label for="inputEmail" class="col-sm-2">Email</label>
-       <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-       </div>
-   </div>
-
-   <div class="row password mb-3">
-       <label for="inputPassword" class="col-sm-2">Password</label>
-       <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-    </div>
-   </div>
-
-   <div class="row remember mb-3">
-       <div class="offset-sm-2">
-        <div class="form-check col-sm-10">
-            <input class="form-check-input" type="checkbox" id="checkRemember">
-          <label class="form-check-label" for="checkRemember">Remember me</label>
+      <div class="TaC mb-3">
+          <div >
+              <input type="checkbox" id="checkTaC">
+              <label for="TaC">I agree to the terms and conditions</label>
           </div>
-       </div>
+      </div>
+      <button type="submit" class="btn btn-success">Register</button>
 
-   <div class="row button mb-3">
-    <div class="offset-sm-2">
-        <div class="col-sm-10">
-    <button type="submit" class="btn btn-danger">Sign in</button>
-    </div>
-    </div>
+  </form>
 </div>
+<div class="container" style="background-color:yellow;">
+<h6>Hello my fellow crewmates love these cool superhero like chracters check out the game to find more cool characters like this fill out the form above and I will see you in the battleground.</h6>
 
-</form>
+<table class="table table-bordered table-dark">
+<thead>
+<tr>
+<th>Image list</th>
+<th>Description</th>
+</tr>
+</thead>  
+<tbody>
+<tr>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvPelLsf4gXxjkag2zGY9kfu4TsvN0eCI1RYtmo3IrZA&s" width="220" height="300"></td>
+<td><h2>Mortis (Creature of the Night)</h2></td>
+<tr>
+<tr>
+<td><img src="https://www.jeumobi.com/wp-content/uploads/2020/12/brawl-stars-Corbac-presentation-guide-1.png" width="200" height="250"></td>
+<td><h2>Crow (Poison God)</h2></td>
+</tr>
+<tr>
+<td><img src="https://www.clasher.us/images/bs/units/Spike.png" width="200" height="200"></td>
+<td><h2>Spike (Overpowered)</h2></td>
+</tr>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99memA87x066UE4kPdMyFGamvsHdTGypsGA&usqp=CAU"></td>
+<td><h2>Darryl (A very tanky brawler)</h2></td>
+</tr>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCkdYVIEQUtaFL7kO-cYiaWtv9iBoV1Th8Jg&usqp=CAU"width="200" height="200"></td>
+<td><h2>El Primo (The god of suplex)</h2></td>
+</tr>
+</tbody>
+</table>
 </div>
-
-<div class="container mt-3 mb-3">
-<h2>Creating Inline Form Layout</h2>
-<form>
-
-<div class="row">
-   <div class="col-auto">
-       <label for="visually-hidden" for="inputEmail">Email</label>
-       <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-   </div>
-
-   <div class="col-auto">
-       <label for="visually-hidden" for="inputEmail">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-   </div>
-
-   <div class="col-auto">
-       <input class="form-check-input" type="checkbox" id="checkRemember">
-       <label class="form-check-label" for="checkRemember">Remember me</label>
-   </div>
-
-   <div class="col-auto">
-    <button type="submit" class="btn btn-danger">Sign in</button>
-</div>
-</div>
-
-</form>
-</div>
-
-
 </body>
 </html>
